@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 720px){
+    .headerlogo h2 {
+        color:red;
+    }
+}
+
+body {
+    background-color: rgb(213, 233, 37);
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    background-color: rgb(237, 240, 89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerborder {
+    border-radius: 10px;
+    height: 100px;
+    width: 1225px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(190, 192, 50);
+}
+
+.headerlogo {
+   width: 400px;
+   height: 100%;
+   border: 1px none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.headerlogo h2 {
+    margin-left: -50px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+    animation: bounce .6s ease infinite alternate;
+}
+
+@keyframes bounce {
+    100% {
+        transform: translateY(-7px);
+    }
+    0% {
+        transform: translateY(0px);
+    }
+
+}
+.headerlist {
+   width: 600px;
+   height: 100%;
+   border: 1px none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+   letter-spacing: 3px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.headerlist ul{
+   list-style: none;
+   display: flex;
+   gap: 100px;
+   color: rgb(0, 0, 0);
+}
+.headerlist ul .darkopt{
+  transition: 1s ease;
+}
+.headerlist ul .darkopt:hover{
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 50px #000000, 1px 0 20px #000000, 0 1px 20px #000000;
+}
+.headerlist ul .woodopt{
+  transition: 1s ease;
+}
+.headerlist ul .woodopt:hover{
+   color: rgb(248, 168, 63);
+   text-shadow: 0 0 50px rgb(223, 155, 66), 1px 0 20px rgb(223, 155, 66), 0 1px 20px rgb(223, 155, 66);
+}
+
+.headerlist ul .neonopt{
+  transition: 1s ease;
+}
+.headerlist ul .neonopt:hover{
+   color: rgb(255, 0, 0);
+   text-shadow: 0 0 50px #3700ff, 1px 0 20px #3700ff, 0 1px 20px #3700ff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    border: 1px none;
+    height: 420px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sectlimit {
+    
+    width:80%;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+
+
